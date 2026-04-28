@@ -1262,7 +1262,7 @@
                     <a href="#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
-                    <a href="https://github.com/Ram2002-ai" target="_blank" class="btn btn-outline">
+                    <a href="https://github.com/pradhanchinmay41-boop" target="_blank" class="btn btn-outline">
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
@@ -1679,7 +1679,7 @@
                     <div class="contact-card">
                         <i class="fab fa-github"></i>
                         <h4>GitHub</h4>
-                        <a href="https://github.com/pradhanchinmay41" target="_blank">github.com/pradhanchinmay41</a>
+                        <a href="https://github.com/pradhanchinmay41-boop" target="_blank">github.com/pradhanchinmay41-boop</a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -1714,7 +1714,7 @@
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <a href="https://github.com/pradhanchinmay41" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/pradhanchinmay41-boop" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/chinmay-pradhan-29927b3a5" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:pradhanchinmay41@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
@@ -1813,89 +1813,12 @@
 
         // ==================== RESUME DOWNLOAD ====================
         function downloadResume() {
-            const resumeContent = `CHINMAY PRADHAN
-========================================
-
-📞 Phone: +91-9178233288
-📧 Email: pradhanchinmay41@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/chinmay-pradhan-29927b3a5
-🐙 GitHub: https://github.com/pradhanchinmay41
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-PROFESSIONAL SUMMARY
-────────────────────────────────────────────────────────────────
-Machine Learning Engineer with strong expertise in Python, SQL, 
-advanced EDA, and end-to-end ML pipeline development. Experienced 
-in building scalable predictive models, applying ensemble techniques, 
-and implementing foundational MLOps practices. Passionate about 
-designing production-ready AI systems and solving real-world 
-business problems using data-driven solutions.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-EDUCATION
-────────────────────────────────────────────────────────────────
-B.Tech in Computer Science and Engineering 
-BPUT,odisha| 2023 - Present
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-TECHNICAL SKILLS
-────────────────────────────────────────────────────────────────
-• Programming: Python, SQL, JavaScript
-• Machine Learning: Scikit-learn, TensorFlow, PyTorch, XGBoost, LLMs, LangChain
-• Data Science: Pandas, NumPy, EDA, Feature Engineering, Statistical Analysis
-• Visualization: Matplotlib, Seaborn,  Power BI
-• Deployment: Streamlit, FastAPI, Gradio, Docker
-• MLOps: Git, MLflow, CI/CD, Model Serialization
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-FEATURED PROJECTS
-────────────────────────────────────────────────────────────────
-
-1. IPL Data Analysis Application
-   • Analysis of IPL data with automated insights and pattern detection and Predict
-   • Tech: Python, EDA, Pandas, Matplotlib
-   
-
-2. Student Performance Prediction System
-   • Predictive ML system to predict student performance  with 85% accuracy
-   • Tech: Python,  Scikit-learn, Flask
-
-3. Movie Recommendation System
-   • Developed an interactive Streamlit web app using Logistic Regression with 92% accuracy
-   • Tech: Python, Scikit-learn, Streamlit
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-EXPERIENCE HIGHLIGHTS
-────────────────────────────────────────────────────────────────
-• Built end-to-end ML pipelines with cross-validation and hyperparameter optimization
-• Developed deployment-ready applications using Streamlit and FastAPI
-• Implemented ensemble regression models achieving 85% accuracy
-• Created interactive AI chatbots with API integration
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-CERTIFICATIONS
-────────────────────────────────────────────────────────────────
-• Web Development Internship at Acmegrade
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Last Updated: March 2026`;
-            
-            const blob = new Blob([resumeContent], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Chinmay_Pradhan_Resume.txt';
+            a.href = 'New folder/RESUME.pdf';
+            a.download = 'Chinmay_Pradhan_Resume.pdf';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-            
             showToast('Resume downloaded successfully!');
         }
 
